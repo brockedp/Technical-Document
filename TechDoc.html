@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .main-section{
+           display: block;
+        font-family: sans-serif;
+        font-size : 21pt;
+        color:darkgrey;
+        
+        }
+        code{
+            font-family: monospace;
+            color:lightgray;
+            background-color: aquamarine;
+            padding:2px;
+            font-style: oblique;
+        }
+        .nav-link{
+            font-family: inherit;
+            
+            font-size: 13pt;
+            color: cadetblue;
+        }
+        nav{
+           
+            display: grid;
+            width: 220px;
+            float:left;
+            margin: 0;
+            padding: 0;
+            margin-right: 10px;
+          
+            
+            
+        }
+        
+        @media only screen and (min-width:768px){
+            nav {
+                width : 200px;
+            }
+     }
+    </style>
+<body>
+    <nav id="navbar" >
+        <header ><u>How To Play Disc Golf</u></header>
+        <a class="nav-link" href=#overview>Overview</a>
+        <a class="nav-link" href=#types_of_throws>Types of Throws</a>
+        <a class="nav-link" href=#types_of_discs>Types of Discs</a>
+        <a class="nav-link" href=#basic_rules>Basic Rules</a>
+        <a class="nav-link" href=#course_layouts>Course Layouts</a>
+    </nav>
+    <main id="main-doc">
+       
+        <section class="main-section" id="overview">
+            <header>Overview</header>
+            <p></p>
+        </section>
+        <section class="main-section" id="types_of_throws">
+            <header>Types of Throws</header>
+            <p id="backhand"></p>
+            <p id="forehand"></p>
+            <p id="overhand"></p>
+                <code> There are many other throws and stances but these are your main throws</code>
+        </section>
+        <section class="main-section" id="types_of_discs">
+            <header>Types of discs</header>
+            <p id="drivers">
+                <code>Ideally used for long distances</code>
+            </p>
+            
+            <p id="midrange">
+                <code>Ideally used for shots that you want control and distance</code>
+            </p>
+            <p id="putters">
+                <code>Ideally used for shooting into the basket and approach shots.</code>
+            </p>
+        </section>
+        <section class="main-section" id="basic_rules">
+            <header>Basic Rules</header>
+            <p id="how_to_play"></p>
+            <ul>
+                <li>Tee off</li>
+                <li>Mark disc</li>
+                <li>Throw from marked disc</li>
+                <li>Putting</li>
+                <li>Scoring</li>
+            </ul>
+            <p id="rules">
+                <code> These are just some general rules to get one started playing disc golf</code>
+            </p>
+        </section>
+        <section class="main-section" id="course_layouts">
+            <header>Course Layouts</header>
+            <p id="general_course"></p>
+        </section>
+        
+    </main>
+</body>
+</html>
