@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
     <style>
+        body{
+            display: flex;
+            justify-content: flex-start;
+            
+        }
         .main-section{
            display: block;
         font-family: sans-serif;
@@ -28,20 +33,26 @@
         }
         nav{
            
-            display: grid;
-            width: 220px;
+            /*display:inline-block;
+            width: 300px;
             float:left;
             margin: 0;
             padding: 0;
             margin-right: 10px;
-          
+            position: sticky;*/
+          top:0;
+  position:sticky;
+  height:100vh;
+  max-width:400px;
+  width:100%;
+            
             
             
         }
-        
+      
         @media only screen and (min-width:768px){
             nav {
-                width : 200px;
+                width : 400px;
             }
      }
     </style>
@@ -49,54 +60,94 @@
     <nav id="navbar" >
         <header ><u>How To Play Disc Golf</u></header>
         <a class="nav-link" href=#overview>Overview</a>
+        <br/>
         <a class="nav-link" href=#types_of_throws>Types of Throws</a>
+        <br/>
         <a class="nav-link" href=#types_of_discs>Types of Discs</a>
-        <a class="nav-link" href=#basic_rules>Basic Rules</a>
+        <br/>
+        <a class="nav-link" href=#flight_numbers>Flight Numbers</a>
+        <br/>
         <a class="nav-link" href=#course_layouts>Course Layouts</a>
     </nav>
     <main id="main-doc">
        
         <section class="main-section" id="overview">
-            <header>Overview</header>
-            <p></p>
+            <header><u>Overview </u></header>
+            <p>Disc golf is a game which is played very much like traditional golf except instead of using balls and clubs, you throw discs. A golf disc is thrown from a tee area to a target, which is the "hole." The hole can be one of a number of disc golf targets; the most common is an elevated metal basket. As a player progresses down the fairway, he or she must make each consecutive throw from the spot where the previous throw landed. The trees, shrubs, and terrain changes located in and around the fairways provide challenging obstacles for the golfer. Finally, the "putt" lands in the basket and the hole is completed. </p>
         </section>
         <section class="main-section" id="types_of_throws">
-            <header>Types of Throws</header>
-            <p id="backhand"></p>
-            <p id="forehand"></p>
-            <p id="overhand"></p>
+            <header><u>Types of Throws</u></header>
+            <h5><u>Backhand Throws</u></h5>
+            <p id="backhand"> A backhand throw is a throw where the golfer reaches across the body away from the target and then pulls the disc through to the target with the back of the hand leading the way through the pull</p>
+            <img id="backhand-img" src="https://i.imgur.com/3yLjzjP.jpg" />
+            <br/>
+            <caption style="font-size: 8pt">Shot by shot of backhand throws</caption>
+            
+            <h5><u>Forehand Throws</u></h5>
+            <p id="forehand">A forehand throw is a throw where the golfer reaches back with the disc with the disc gripped with the palm of the disc vertically and facing the the direction of the hole. The golfer will swing the arm forward as if throwing a baseball side armed and snapping the wrist forward to give the disc spin.</p>
+             <img id="forehand-img" style="width:300px; height=auto;" src="https://cdn.discgolf.ultiworld.com/wp-content/uploads/2018/10/nate-sexton-usdgc.jpg" />
+            <br/>
+            <caption style="font-size: 8pt">Image of a disc golfer in the midle of a forehand throw</caption>
+            
+            <h5><u>Overhand Throws</u></h5>
+            <p id="overhand"> The overhand throw are called by two names. There is the thumber and the tomahawk. These are thrown overhead as if throwing a baseball. Usually this is thrown to get over obstacles.</p>
+             <img id="thumber-img" style="width:300px; height=auto;" src="https://cdn.discgolf.ultiworld.com/wp-content/uploads/2017/09/image1-3-e1505238965731-225x300.jpg" />
+            <img id="tomahawk-img" style="width:300px; height=auto;" src="https://cdn.discgolf.ultiworld.com/wp-content/uploads/2017/09/image2-1-225x300.jpg" />
+            <br/>
+            <caption style="font-size: 8pt">Image of the grip for a thumber (left) and tomahawk (right)</caption>
+            <br/>
                 <code> There are many other throws and stances but these are your main throws</code>
         </section>
+            
         <section class="main-section" id="types_of_discs">
-            <header>Types of discs</header>
+            <header><u>Types of discs</u></header>
+                <img id="driver-img" src="https://discgolf.discraft.com/pix/grc_classes.png" />
+            <h6>There are three types of discs</h6>
+            <ul>
+                <li>Drivers</li>
+                <li>Midranges</li>
+                <li>Putters</li>
+            </ul>
+            <h5><u>Drivers</u></h5>
             <p id="drivers">
                 <code>Ideally used for long distances</code>
             </p>
             
+            <h5><u>Midrange</u></h5>
             <p id="midrange">
                 <code>Ideally used for shots that you want control and distance</code>
             </p>
+            
+            <h5><u>Putters</u></h5>
             <p id="putters">
                 <code>Ideally used for shooting into the basket and approach shots.</code>
             </p>
         </section>
-        <section class="main-section" id="basic_rules">
-            <header>Basic Rules</header>
-            <p id="how_to_play"></p>
+        <section class="main-section" id="flight_numbers">
+            <header><u>Flight Numbers</u></header>
+            <p id="flight_numbers_explaination">These four numbers represent different characteristics of the flight. The four numbers are: speed, glide, turn, fade.</p>
             <ul>
-                <li>Tee off</li>
-                <li>Mark disc</li>
-                <li>Throw from marked disc</li>
-                <li>Putting</li>
-                <li>Scoring</li>
+                <li>Speed - this is the amount of power the disc is required to follow the flight of that disc</li>
+                <li>Glide - the amount of float the disc has during flight</li>
+                <li>Turn - the amount of deviation to the right or left the disc has while in flight </li>
+                <li>Fade - the amount of hook to the right or left the disc has an the end of the flight</li>
             </ul>
-            <p id="rules">
-                <code> These are just some general rules to get one started playing disc golf</code>
+            <p>
+              Disc golf flight ratings are not an exact science. We're often asked how we determine the flight ratings for each disc. Quite honestly, we throw it. Try and think of the entire set of flight ratings as a comparison between discs or as a guideline. If you see one disc with a higher fade rating than another, or a lower speed rating than one in your bag, you can easily determine some basic elements of that disc.  
             </p>
         </section>
         <section class="main-section" id="course_layouts">
-            <header>Course Layouts</header>
-            <p id="general_course"></p>
+            <header><u>Course Layouts</u></header>
+            <p id="general_course">As stated in the overview, disc golf is very much like traditional golf but because the golfed has the ability to manipulate the flight of a disc, the positioning of aerial obstacles like trees are what make different disc golf courses both scenic and interesting. Other elements such as water hazards and out of bounds areas also make disc golf courses more or less interesting in challenging the mental game.
+            
+            Started in the 1970s, the goal is to finish the hole in the least amount of throws possible. All players start on a tee area and throw to the hole. The most common type of hole is a metal basket called a Pole Hole, but some people use trees, poles, etc. as a hole, which is a much cheaper option.
+
+            On a disc golf course, there is a fairway that players use to get to the hole. While trying to complete a hole, there may be a lot of obstacles that might get in your way. Some of these challenges include terrain, shrubs, bushes, trees, and other types of obstacles.
+
+            The last area of a disc golf course is the putting area, known as a green, even though it isn’t usually green. This is usually a few feet around the basket. Sometimes, there is a different kind of grass or turf surrounding the hole, or it is just the typical terrain as the rest of the hole. The area within 10 meters (33 feet) of the basket is known as “inside the circle.” Disc golf rules changes slightly when throwing within the circle as you must show balance and are not allowed to step forward for putts inside the circle.    
+            </p>
+            <code>Get out there and have fun!!!</code>
+            <img id="disc-basket-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Disc_golfer_and_basket.jpg/450px-Disc_golfer_and_basket.jpg"/>
         </section>
         
     </main>
